@@ -10,3 +10,4 @@ public interface StudentDAO {
  int update(Student student,int rollNo);
  int deleteByrollno(int rollNo);
 }
+//studentDAO
