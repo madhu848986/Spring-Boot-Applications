@@ -40,3 +40,4 @@ public class StudentController {
         return sDAO.deleteByrollno(rollNo) + " student(s) deleted from DB";
     }
 }
+//controller
