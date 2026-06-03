@@ -11,3 +11,4 @@ class StudentDetailsManagementApplicationTests {
 	}
 
 }
+//main class
