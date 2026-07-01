@@ -4,7 +4,8 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import com.example.Student.Student;
 import com.example.StudentDao.StudentDAO;
 
@@ -14,6 +15,10 @@ public class StudentController {
 
     @Autowired
     private StudentDAO sDAO;
+    @GetMapping("/")
+public void redirectToLogin(HttpServletResponse response) throws IOException {
+    response.sendRedirect("/login.html");
+}
 
     @GetMapping("/students")
     public List<Student> getStudents() {
