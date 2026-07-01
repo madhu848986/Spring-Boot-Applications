@@ -186,9 +186,9 @@
 
 <script>
   // Auto-detect API URL (local vs ngrok)
-  const apiUrl = window.location.hostname.includes("ngrok-free.app")
-    ? "https://9aafe2dbc7a5.ngrok-free.app/students"
-    : "http://localhost:8080/students";
+  const apiUrl = window.location.hostname === "localhost"
+    ? "http://localhost:8080/students"
+    : "https://studentinfo-kopa.onrender.com/students";
 
   let editingRollNo = null;
 
