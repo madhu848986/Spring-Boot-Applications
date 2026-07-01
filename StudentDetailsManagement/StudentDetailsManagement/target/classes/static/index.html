@@ -186,10 +186,7 @@
 
 <script>
   // Auto-detect API URL (local vs ngrok)
-  const apiUrl = window.location.hostname === "localhost"
-    ? "http://localhost:8080/students"
-    : "https://studentinfo-kopa.onrender.com/students";
-
+  const apiUrl = "https://studentinfo-kopa.onrender.com/students";
   let editingRollNo = null;
 
   document.getElementById("studentForm").addEventListener("submit", async function(e) {
